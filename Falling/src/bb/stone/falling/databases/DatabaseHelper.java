@@ -67,8 +67,7 @@ public class DatabaseHelper extends SQLiteOpenHelper// 继承SQLiteOpenHelper类
         sBuffer.append("zA FLOAT,");
         sBuffer.append("xD FLOAT,");
         sBuffer.append("yD FLOAT,");
-        sBuffer.append("zD FLOAT,");
-        sBuffer.append("cD FLOAT)");
+        sBuffer.append("zD FLOAT)");
 
         // 执行创建表的SQL语句
         db.execSQL(sBuffer.toString());

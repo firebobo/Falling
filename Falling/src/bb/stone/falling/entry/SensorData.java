@@ -8,13 +8,12 @@ public class SensorData {
 	float xD;
 	float yD;
 	float zD;
-	float cD;
 
 	public SensorData() {
 		super();
 	}
 	public SensorData(long timestramp, float xA, float yA, float zA, float xD,
-			float yD, float zD, float cD) {
+			float yD, float zD) {
 		super();
 		this.time = timestramp;
 		this.xA = xA;
@@ -23,10 +22,6 @@ public class SensorData {
 		this.xD = xD;
 		this.yD = yD;
 		this.zD = zD;
-		this.cD = cD;
-	}
-	public float getcD() {
-		return cD;
 	}
 	public long getTime() {
 		return time;
@@ -48,9 +43,6 @@ public class SensorData {
 	}
 	public float getzD() {
 		return zD;
-	}
-	public void setcD(float cD) {
-		this.cD = cD;
 	}
 	public void setTime(long time) {
 		this.time = time;
@@ -83,7 +75,6 @@ public class SensorData {
 		sb.append(xD+" ");
 		sb.append(yD+" ");
 		sb.append(zD+" ");
-		sb.append(cD+" ");
 		return sb.toString();
 	}
 }
